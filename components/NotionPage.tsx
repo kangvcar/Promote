@@ -229,6 +229,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         g.block = block
     }
 
+
     const canonicalPageUrl =
         !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
 
