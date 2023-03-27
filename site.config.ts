@@ -14,10 +14,10 @@ export default siteConfig({
     author: 'KK',
 
     // 社交媒体用户名（可选）
-    description: '💋 一个为安全工程师量身打造的 终极 学习社区！ ',
+    description: '💋 一个为安全工程师量身打造的终极学习社区！ ',
 
     // social usernames (optional)
-    twitter: 'transitive_bs',
+    // twitter: 'transitive_bs',
     github: 'hvvyxs',
     // linkedin: 'fisch2',
     // mastodon: '#', // 可选的mastodon档案网址，提供链接验证
@@ -52,13 +52,13 @@ export default siteConfig({
     // navigationStyle: 'default'
     navigationStyle: 'custom',
     navigationLinks: [
-      {
-        title: 'About',
-        pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-      },
-      {
-        title: 'Contact',
-        pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-      }
+        {
+            title: 'About',
+            pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+        },
+        {
+            title: 'Contact',
+            pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+        }
     ]
 })
