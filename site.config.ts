@@ -36,7 +36,7 @@ export default siteConfig({
     // 是否为生成的预览图像启用缓存redis（可选）
     // 注意：如果启用redis，则需要设置`REDIS_HOST`和`REDIS_PASSWORD`
     // 环境变量。有关更多信息，请参见自述文件
-    isRedisEnabled: false,
+    isRedisEnabled: true,
 
     // Notion页面ID到URL路径的映射（可选）
     // 此处定义的任何页面都将覆盖其默认URL路径
