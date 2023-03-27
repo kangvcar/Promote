@@ -1,46 +1,46 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
-    // the site's root Notion page (required)
+    // 站点的根Notion页面（必填）
     rootNotionPageId: 'ef82ec002961426aa8e94e4c9a8493d5',
 
-    // if you want to restrict pages to a single notion workspace (optional)
-    // (this should be a Notion ID; see the docs for how to extract this)
+    // 如果您要将页面限制为单个Notion工作区（可选）
+    // （这应该是一个Notion ID；请参阅文档以了解如何提取此信息）
     rootNotionSpaceId: null,
 
-    // basic site info (required)
+    // 基本站点信息（必填）
     name: '康创护网研习社',
     domain: 'hwyxs.vercel.app',
     author: 'KK',
 
-    // open graph metadata (optional)
+    // 社交媒体用户名（可选）
     description: '💋 一个为安全工程师量身打造的 终极 学习社区！ ',
 
     // social usernames (optional)
     twitter: 'transitive_bs',
     github: 'hvvyxs',
-    linkedin: 'fisch2',
-    // mastodon: '#', // optional mastodon profile URL, provides link verification
-    // newsletter: '#', // optional newsletter URL
-    // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+    // linkedin: 'fisch2',
+    // mastodon: '#', // 可选的mastodon档案网址，提供链接验证
+    // newsletter: '#', // 可选的新闻通讯网址
+    // youtube: '#', // 可选的YouTube频道名称或`channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
-    // default notion icon and cover images for site-wide consistency (optional)
-    // page-specific values will override these site-wide defaults
+    // 站点范围内的默认Notion图标和封面图像（可选）
+    // 页面特定的值将覆盖这些站点范围的默认值
     defaultPageIcon: null,
     defaultPageCover: null,
     defaultPageCoverPosition: 0.5,
 
-    // whether or not to enable support for LQIP preview images (optional)
+    // 是否启用LQIP预览图像支持（可选）
     isPreviewImageSupportEnabled: true,
 
-    // whether or not redis is enabled for caching generated preview images (optional)
-    // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
-    // environment variables. see the readme for more info
+    // 是否为生成的预览图像启用缓存redis（可选）
+    // 注意：如果启用redis，则需要设置`REDIS_HOST`和`REDIS_PASSWORD`
+    // 环境变量。有关更多信息，请参见自述文件
     isRedisEnabled: false,
 
-    // map of notion page IDs to URL paths (optional)
-    // any pages defined here will override their default URL paths
-    // example:
+    // Notion页面ID到URL路径的映射（可选）
+    // 此处定义的任何页面都将覆盖其默认URL路径
+    // 示例：
     //
     // pageUrlOverrides: {
     //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
@@ -48,18 +48,17 @@ export default siteConfig({
     // }
     pageUrlOverrides: null,
 
-    // whether to use the default notion navigation style or a custom one with links to
-    // important pages
-    navigationStyle: 'default'
-    // navigationStyle: 'custom',
-    // navigationLinks: [
-    //   {
-    //     title: 'About',
-    //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-    //   },
-    //   {
-    //     title: 'Contact',
-    //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-    //   }
-    // ]
+    // 是否使用默认的Notion导航样式或具有链接到重要页面的自定义导航样式
+    // navigationStyle: 'default'
+    navigationStyle: 'custom',
+    navigationLinks: [
+      {
+        title: 'About',
+        pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+      },
+      {
+        title: 'Contact',
+        pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+      }
+    ]
 })
