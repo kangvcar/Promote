@@ -78,7 +78,7 @@ export const FooterImpl: React.FC = () => {
         {config.zhihu && (
           <a
             className={styles.zhihu}
-            href={`https://zhihu.com/people/${config.zhihu}`}
+            href={`https://zhihu.com/org/${config.zhihu}`}
             title={`Zhihu @${config.zhihu}`}
             target='_blank'
             rel='noopener noreferrer'

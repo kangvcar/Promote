@@ -11,7 +11,7 @@ export default siteConfig({
     // 基本站点信息（必填）
     name: '康创护网研习社',
     domain: 'hwyxs.vercel.app',
-    author: 'KK',
+    author: '康创护网研习社',
 
     // 社交媒体用户名（可选）
     description: '💋 一个为安全工程师量身打造的终极学习社区！ ',
@@ -19,6 +19,7 @@ export default siteConfig({
     // social usernames (optional)
     // twitter: 'transitive_bs',
     github: 'hvvyxs',
+    zhihu: 'kang-chuang-hu-wang-yan-xi-she',
     // linkedin: 'fisch2',
     // mastodon: '#', // 可选的mastodon档案网址，提供链接验证
     // newsletter: '#', // 可选的新闻通讯网址

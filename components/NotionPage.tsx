@@ -26,7 +26,6 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
-import { ReactUtterances } from './ReactUtterances'
 import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
@@ -233,20 +232,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
     const canonicalPageUrl =
         !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
 
-    let comments: React.ReactNode = null
-
-    if (block.type === 'page' && block.parent_table === 'collection') {
-        comments = (
-            <ReactUtterances
-                repo='kangvcar/SecPro'
-                issueMap='issue-term'
-                issueTerm='title'
-                label='blog'
-                theme='preferred-color-scheme'
-            />
-        )
-    }
-
     const socialImage = mapImageUrl(
         getPageProperty<string>('Social Image', block, recordMap) ||
         (block as PageBlock).format?.page_cover ||
@@ -293,7 +278,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
                 mapPageUrl={siteMapPageUrl}
                 mapImageUrl={mapImageUrl}
                 searchNotion={config.isSearchEnabled ? searchNotion : null}
-                pageFooter={comments}
                 pageAside={pageAside}
 
                 footer={footer}
