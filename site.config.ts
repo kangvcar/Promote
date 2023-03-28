@@ -22,7 +22,7 @@ export default siteConfig({
     zhihu: 'kang-chuang-hu-wang-yan-xi-she',
     // linkedin: 'fisch2',
     // mastodon: '#', // 可选的mastodon档案网址，提供链接验证
-    // newsletter: '#', // 可选的新闻通讯网址
+    newsletter: 'mailto:kangvcar@gmail.com', // 可选的新闻通讯网址
     // youtube: '#', // 可选的YouTube频道名称或`channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
     // 站点范围内的默认Notion图标和封面图像（可选）
